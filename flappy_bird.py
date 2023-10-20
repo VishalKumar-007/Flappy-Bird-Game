@@ -11,9 +11,9 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT)) # pygame will give
 GROUNDY = SCREENHEIGHT * 0.8 # 80% of screen height I have taken for GROUNDY
 GAME_SPRITES = {} # images which is used in game
 GAME_SOUNDS = {} # sounds which is used in game
-PLAYER = 'C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/bird.png' # Player image (i.e. flappy_bird) location
-BACKGROUND = 'C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/background.png' # Game background location
-PIPE = 'C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/pipe.png' # pipe image location
+PLAYER = 'C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/bird.png' # Player image (i.e. flappy_bird) location
+BACKGROUND = 'C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/background.png' # Game background location
+PIPE = 'C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/pipe.png' # pipe image location
 
 # Game sprites and game sounds will be the heart of the game
 
@@ -190,30 +190,30 @@ if __name__ == "__main__":
     FPSCLOCK = pygame.time.Clock() # This clock controls game's FPS
     pygame.display.set_caption('Flappy bird by LEGEND_VK') # set titles for our game
     GAME_SPRITES['numbers'] = (
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/0.png').convert_alpha(), # convert_alpha() is used for control blitting of image and alpha on screen
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/1.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/2.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/3.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/4.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/5.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/6.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/7.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/8.png').convert_alpha(),
-        pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/9.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/0.png').convert_alpha(), # convert_alpha() is used for control blitting of image and alpha on screen
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/1.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/2.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/3.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/4.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/5.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/6.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/7.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/8.png').convert_alpha(),
+        pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/9.png').convert_alpha(),
     )
 
-    GAME_SPRITES['message'] = pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/message.png').convert_alpha()
-    GAME_SPRITES['base'] = pygame.image.load('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/sprites/base.png').convert_alpha()
+    GAME_SPRITES['message'] = pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/message.png').convert_alpha()
+    GAME_SPRITES['base'] = pygame.image.load('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/sprites/base.png').convert_alpha()
     GAME_SPRITES['pipe'] = (pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180), # pygame.transform.rotate is used to show reversed pipe i.e. the upper pipe
         pygame.image.load(PIPE).convert_alpha() # for obtaining lower pipe  
     )    
     
     # Game sounds
-    GAME_SOUNDS['die'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/audio/die.wav')
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/audio/hit.wav')    
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/audio/point.wav')
-    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/audio/swoosh.wav')
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Visual Studio Coding/(Project_2) Flappy_Bird/gallery/audio/wing.wav')
+    GAME_SOUNDS['die'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/audio/die.wav')
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/audio/hit.wav')    
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/audio/point.wav')
+    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/audio/swoosh.wav')
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound('C:/Users/LENOVO/Desktop/Vs Code Projects/Flappy-Bird-Game/gallery/audio/wing.wav')
     
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
